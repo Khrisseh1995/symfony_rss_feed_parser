@@ -1,0 +1,69 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.grid {
+    padding-top: 25px;
+    display: grid;
+    gap: 1rem;
+}
+
+.header {
+    background-color: #3AAFA9;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 10px 5px;
+}
+
+.pub-date-container {
+    padding-left: 5px;
+}
+
+.view-link-button {
+    background-color: #3AAFA9;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 5px 4px 3px 3px;
+    color: white;
+    font-size: 22px;
+}
+
+.button-container {
+    padding-right: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    box-shadow: 3px 6px 17px -3px rgba(0, 0, 0, 0.10);
+    border-radius: 10px 10px 0px 0px;
+    grid-template-rows: 0.75fr 1fr 1fr;
+    display: grid;
+    font-size: 20px;
+    grid-template-areas: 'header' 'content' 'footer'
+}

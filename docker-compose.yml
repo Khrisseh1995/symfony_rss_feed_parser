@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  rss_feed_app:
+    image: "docker.io/bitnami/symfony:1-debian-10"
+    ports:
+      - "8085:8000"
+    volumes:
+      - ".:/app:rw"
+    depends_on:
+      - mariadb
+    environment:
+      - SYMFONY_PROJECT_NAME=rss_feed_app
+  mariadb:
+    image: "docker.io/bitnami/mariadb:10.3-debian-10"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "3306:3306"
